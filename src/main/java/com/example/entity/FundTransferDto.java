@@ -1,28 +1,14 @@
 package com.example.entity;
 
-import java.util.Date;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Accounts {
-	
-	
-	private String accNumber;
-
-	private String bankName;
-
+public class FundTransferDto {
+	private String fromAccNo;
+	private String toAccNo;
 	private float amount;
-	
-	private String phoneNo;
-
-	private Date transDate;
-	
-	
-
 }
